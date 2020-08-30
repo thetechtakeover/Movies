@@ -16,10 +16,13 @@ body {
     font-size: 25px; 
     line-height: 1.5em;
 }
+
+
+
 .banner1{
     background-image:linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.808)),url(https://i.pinimg.com/originals/3c/f6/56/3cf656908a2481110485bac3bf1297d9.jpg);
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
 }
 nav{
     background-color: rgba(0, 0, 0, 0.753);
@@ -50,4 +53,18 @@ nav li {
     list-style: none;
     font-size: 18px;
     padding: 20px;
+}
+#title{
+    font-size: 4.0em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*look at inspect*/
+}
+.btext2{
+    align-self: center;
+}
+/* work on the above section*/
+#mainsection {
+
 }
