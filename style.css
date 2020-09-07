@@ -39,7 +39,6 @@ nav li a {
 }
 
 nav a:hover {
-    /*background-color: rgba(255, 255, 255, 0.842);*/
     color:#fff;
     text-shadow: 2px 3px 10px rgba(204, 180, 72, 0.959);
     font-size: 20px;
@@ -334,7 +333,7 @@ footer p {
         background-color:  rgba(141, 5, 5, 0.952);
         width: 90%;
        border: 2px solid rgba(255, 255, 255, 0.5);
-       margin: 20px auto;
+       margin: 0px auto 40px auto;
     }
    
     .movie_click_container p {
@@ -345,10 +344,8 @@ footer p {
    
 /* Movie wrapper section */
     .movie_wrapper {
-        margin-top: 100px;
         display: flex;
         flex-direction: column; 
-        margin:0;   
     }
 
     .image_container {
@@ -436,11 +433,7 @@ footer p {
     
         #title {
             display: block;
-            font-size: 2.25em;
             margin: 0 auto;
-        }
-
-        #title {
             font-size: 2.80em;
             position: relative;
             bottom: 30px;
@@ -615,3 +608,4 @@ footer p {
             transform: rotate(360deg)   
         }
     }
+    /* Note: Go back to delete duplicate media query */
