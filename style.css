@@ -116,14 +116,13 @@ nav li {
 }
 
 .smileimg {
-    background-image: url("./images/man\ laughing.jpg");
+    background-image: url("./images/manlaughing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 580px;
-    height: 460px;
-    margin: 0 auto 0 auto;
+    width: 560px;
+    height: 450px;
+    margin: 0 20px 0 auto;
     position: relative;
-    border:1px solid rgba(141, 5, 5, 0.26);
 }
 
 .movieLife {
@@ -161,10 +160,10 @@ nav li {
 }
 /* Movie Hover Instruction Section */
  .movie_click_container {
-     position: relative;
-     background-color:  rgba(141, 5, 5, 0.952);
-     width: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    background-color:  rgba(141, 5, 5, 0.952);
+    width: 400px;
+    height: 50ps;
     margin: 100px auto;
  }
 
@@ -532,9 +531,10 @@ footer p {
         }
         
         i:hover {
+            color: rgba(204, 180, 72, 0.788);
             text-shadow: 2px 4px 5px rgba(141, 5, 5, 0.952);
-            font-size: 50px;
-            transform: rotate(360deg)   
+            font-size: 40px;
+            transform: scale(.5em)    
         }
     }
     /* Desktops */
@@ -599,13 +599,14 @@ footer p {
             margin: 0 auto 0 auto;
             font-size: 35px;
             color: #fff;
-            transition: all 1s ease-in;   
+            transition: all .3s ease-in;   
         }
         
         i:hover {
+            color: rgba(204, 180, 72, 0.788);
             text-shadow: 2px 4px 5px rgba(141, 5, 5, 0.952);
-            font-size: 50px;
-            transform: rotate(360deg)   
+            font-size: 40px;
+            transform: scale(.5em)   
         }
     }
     /* Note: Go back to delete duplicate media query */
