@@ -16,11 +16,12 @@ Paragraph - font-family: 'Lato', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-family: 'Lato', sans-serif;
-    font-size: 17px; 
+    font-size: 18px; 
     line-height: 1.5em;
 }
 
@@ -44,8 +45,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: bold;
     padding: 5px 10px;
-    transform: scale(0.75);
-    
+    transform: scale(0.75); 
 }
 
 nav ul {
@@ -57,18 +57,15 @@ nav ul {
 nav li {
     list-style: none;
     font-size: 18px;
-    padding: 20px;
+    padding: 20px 75px;
 }
+
 /* Banner  */
+
 .banner1 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.747)), url(https://i.pinimg.com/originals/3c/f6/56/3cf656908a2481110485bac3bf1297d9.jpg);
     width: 100vw;
     height: 90vh;
-}
-
-.title_container {
-    display: flex;
-    justify-content: center;
 }
 
 #title {
@@ -76,26 +73,29 @@ nav li {
     font-size: 5.0em;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.849);
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
 }
 
 
-.hightext{
+.hightext {
     display: inline;
     position: relative;
     bottom: 25px;
     color: rgba(141, 5, 5, 0.952);
     text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.849);
     transition: all 2s ease;
-    animation: 6s linear infinite color;
-
+    animation: 2s linear infinite color;
 }
 
 @keyframes color {
-        0%   {color: #fff(141, 5, 5, 0.952);}
-        25%  {color: rgba(199, 149, 13, 0.959);}
-        50%  {color:rgba(190, 90, 23, 0.952);}
+        0%   {color:rgba(141, 5, 5, 0.952);}
+        25%  {color: rgb(66, 59, 59);}
+        50%  {color:rgb(168, 163, 163);}
         100% {color:rgba(141, 5, 5, 0.952);}
       }
 
@@ -108,11 +108,13 @@ nav li {
 
 
 /*mainsection*/
+
 .mainsection_container {
-    background-color: #000;
+    background-color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
-    margin: 50px 0px;
+    margin: 20px auto 20px auto;
 }
 
 .smileimg {
@@ -121,69 +123,92 @@ nav li {
     background-size: cover;
     width: 560px;
     height: 450px;
-    margin: 0 20px 0 auto;
     position: relative;
+    margin: 20px auto 20px auto;
 }
 
 .movieLife {
     box-sizing: border-box;
     width:50%;
     height: auto;
-    margin: 30px auto;
+    margin: 20px auto;
     position: relative;
     bottom: 10px;  
 }
 
-
 .movieLife h1 {
      text-align: center;
-     padding-top:10px;
-     margin: 0 auto 50px auto;
+     font-size: 1.5em;
+     padding:10px 20px;
+     margin: 10px auto 20px auto;
      background-color:  rgba(141, 5, 5, 0.952);
-     width: 350px;
-     height: 50px;
-     text-transform: uppercase;
+     color: #fff;
+     width: 300px;
+     height: 45px;
+     text-transform: capitalize;
 }
 
 .movieLife p{
     padding: 0 10px;   
 }
-
+/* Mid Section Banner */
 #mainsection {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.151),rgba(7, 3, 3, 0.39)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1200px-Hollywood_Sign_%28Zuschnitt%29.jpg) ;
-    background-position:center center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.616),rgba(7, 3, 3, 0.589)), url(./images/movies\ seats.jpg) ;
+    background-position:top center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
-    margin-top: 0;
+    height: 90vh;
+    margin: 20px auto 20px auto;
+}
+
+.quote {
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.2em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
 }
 /* Movie Hover Instruction Section */
+
  .movie_click_container {
-    position: relative;
+    display: inline-block;
     background-color:  rgba(141, 5, 5, 0.952);
-    width: 400px;
-    height: 50ps;
-    margin: 100px auto;
+    height: 45px;
+    margin: 25px auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
  }
 
  .movie_click_container p {
-    font-size: 1.5em;
+    color: #fff;
+    font-size: .90em;
     text-align: center;
-    padding: 15px 10px;
+    padding: 8px 10px;
  }
 
 
 /* Image Movie Section */
 .movie_wrapper {
-    margin-top: 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;    
+    flex-direction: row;
+    justify-content: center; 
+    width: 100%; 
 }
 
 .image_container {
-    width: 350px;
-    height: 450px;
+    width: 370px;
+    height: 440px;
     box-sizing: border-box;
     position: relative;
 }
@@ -192,6 +217,7 @@ nav li {
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .image_overlay {
@@ -204,7 +230,7 @@ nav li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.89);
+    background-color: rgba(0, 0, 0, 0.925);
     color: #fff;
     opacity: 0;
     transition: opacity 1.0s;
@@ -218,29 +244,47 @@ nav li {
 
 .image_title {
     position: relative;
-    bottom: 30px;
+    bottom: 15px;
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
 }
 
 .image_text {
-    font-size: 0.85em;
-    margin-top: 0.25em;
-     padding: 0 15px;
+    font-size: 1em;
+    margin-top: 0.2em;
+    padding: 0 10px;
+    line-height: 1.2em;
 }
+
 /* Icons Section */
 .icon_container {
     width: 100%;
-    height: 100px;
-    margin: 10px auto 0 auto;
+    height: 60px;
+    margin: 0px auto 0 auto;
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-/* Banner */
+/* Icon Section */
+i {
+    display: block;
+    margin: 0 auto 0 auto;
+    font-size: 30px;
+    color: #fff;
+    transition: all .3s ease-in;   
+ }
+        
+i:hover {
+    color: rgba(141, 5, 5, 0.952);
+    text-shadow: 2px 2px 2px #fff;
+    font-size: 32px;
+    transform: scale(.5em)   
+}
+    
+/* Footer Banner */
 .banner2 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.747)), url(https://i.ytimg.com/vi/TjW1SsvbA9s/maxresdefault.jpg);
     width: 100vw;
@@ -259,13 +303,14 @@ footer p {
     text-align: center;
     padding-top: 50px;
 }
+
 /*MEDIA QUERIES 
  Mobile */
 @media (max-width: 499px) { 
     nav ul {
         display: flex;
         flex-flow: row;
-        justify-content: start;
+        justify-content: space-evenly;
     }
     
     nav li {
@@ -288,24 +333,27 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         position: relative;
-        bottom: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #title {
-        font-size: 2.05em;
+        font-size: 1.80em;
         margin: 0 auto;
     }
 
     .mainsection_container {
-        background-color: #000;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         margin: 10px auto;
     }
 
     .smileimg {
-        width: 350px;
+        width: 90%;
         height: 300px;
     } 
 
@@ -313,17 +361,31 @@ footer p {
         box-sizing: border-box;
         width:90%;
         height: auto;
-        margin: 10pxpx auto;
+        margin: 10px auto;
         position: relative;
         bottom: 10px;  
     }
 
-    /*Hollywood Image  */
+    /*Theater Image  */
     #mainsection {  
-        width: 100%;
+        width: 90%;
         height: 40vh;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 10px auto;
         background-position: center center;
+        }
+
+     .quote {
+        color: #fff;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5em;
+        font-weight: 100;
+        line-height: 1.3em;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
         }
 
 /* Movie Hover Instruction Section */
@@ -331,8 +393,8 @@ footer p {
         position: relative;
         background-color:  rgba(141, 5, 5, 0.952);
         width: 90%;
-       border: 2px solid rgba(255, 255, 255, 0.5);
-       margin: 0px auto 40px auto;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        margin: 0px auto 0px auto;
     }
    
     .movie_click_container p {
@@ -345,6 +407,7 @@ footer p {
     .movie_wrapper {
         display: flex;
         flex-direction: column; 
+        background-color: #000;
     }
 
     .image_container {
@@ -389,7 +452,10 @@ footer p {
         text-shadow: 2px 4px 5px rgba(141, 5, 5, 0.952);
     }
 
-
+    i:hover {
+        color: rgba(141, 5, 5, 0.952);
+        text-shadow: 2px 2px 2px #fff;
+    }
 
 /* Footer Section */
     .banner2 {
@@ -414,28 +480,19 @@ footer p {
         padding: 5px;
     }
 }
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET  ************************************************* 
+**************************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+***************************************************************************************************/
 /* Tablets */
 @media (min-width: 480px) and (max-width: 887px) {
         nav li {
             list-style: none;
             font-size: .90em;
-            padding: 5px;
-        }
-
-        .title_container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            bottom: 100px;
-        }
-    
-        #title {
-            display: block;
-            margin: 0 auto;
-            font-size: 2.80em;
-            position: relative;
-            bottom: 30px;
+            padding: 8px 20px 8px 20px;
         }
 
         .banner1 {
@@ -443,48 +500,121 @@ footer p {
             height: 50vh;
         }
 
+        .title_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 75px;
+        }
+
+        #title {
+            display: block;
+            margin: 0 auto;
+            font-size: 2.5em;
+            position: relative;
+            width: 100%;
+            height: 60px;
+            border: 3px solid rgb(172, 3, 3);
+        }
+
         .mainsection_container {
-            background-color: #000;
+            background-color: #fff;
             display: flex;
             flex-direction: column;
-            margin: 50px 0px;
+            margin: 40px 0px;
         }
 
         .smileimg {
-            width: 480px;
-            height: 455px;
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
         }
 
         .movieLife {
             box-sizing: border-box;
             width:90%;
             height: auto;
-            margin: 30px auto;
+            margin: 0px auto;
             position: relative;
             bottom: 10px; 
         }
+         .movieLife h1 {
+            text-align: center;
+            font-size: 1.5em;
+            padding:10px 20px;
+            margin: 40px auto 20px auto;
+            background-color:  rgba(141, 5, 5, 0.952);
+            color: #fff;
+            width: 280px;
+            height: 45px;
+            text-transform: capitalize;
+           }
+        
+/* Theater Section */
+         #mainsection {  
+            width: 90vw;
+            height: 60vh;
+            margin: 0 auto 50px auto;
+            background-position: center center;
+        }
+
+         .quote {
+            color: #fff;
+            font-family: 'Anton', sans-serif;
+            font-size: 2.0em;
+            font-weight: 100;
+            line-height: 1.3em;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            text-align: center;
+        }
+/* Movie Hover instructions */
+        .movie_click_container {
+            position: relative;
+            background-color:  rgba(141, 5, 5, 0.952);
+            width: 400px;
+            height: 60px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            margin: 20px auto 10px auto;
+            }
+           
+        .movie_click_container p {
+            font-size: 1em;
+            text-align: center;
+            padding: 5px 8px;
+            }
+
 /* movie review section */
         .movie_wrapper {
-            margin-top: 100px;
             display: flex;
             flex-direction: column;
             margin:0;   
         }
 
         .image_container {
-            width: 400px;
-            height: 460px;
+            width: 350px;
+            height: 485px;
             box-sizing: border-box;
             position: relative;
             margin: 0 auto;
             padding: 10px;
         }
-
-        #mainsection{
-            width: 90%;
-            height: 70vh;
-            margin: 0 auto 60px auto;
-        } 
+        
+        .image_container_img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .image_overlay {
             position: absolute;
@@ -525,88 +655,16 @@ footer p {
         i {
             display: block;
             margin: 0 auto 0 auto;
-            font-size: 35px;
+            font-size: 30px;
             color: #fff;
             transition: all 1s ease-in;   
         }
         
         i:hover {
-            color: rgba(204, 180, 72, 0.788);
-            text-shadow: 2px 4px 5px rgba(141, 5, 5, 0.952);
-            font-size: 40px;
-            transform: scale(.5em)    
+            color: rgba(141, 5, 5, 0.952);
+            text-shadow: 2px 4px 5px #fff;
+            font-size: 32px;
+            transform: rotate(360deg);    
         }
     }
-    /* Desktops */
-    @media (min-width: 769px) {
-        .movie_wrapper {
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-evenly;    
-        }
-        
-        .image_container {
-            width: 350px;
-            height: 450px;
-            box-sizing: border-box;
-            position: relative;
-        }
-        
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .image_overlay {
-            position: absolute;
-            top:0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.89);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: opacity 1.0s;
-            cursor: pointer;
-        }
-        
-        .image_overlay:hover {
-            opacity: 1;
-            border: 1px solid rgba(255, 255, 255, 0.603);
-        }
-        
-        .image_title {
-            position: relative;
-            bottom: 30px;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-family: 'Lato', sans-serif;
-        }
-        
-        .image_text {
-            font-size: 0.85em;
-            margin-top: 0.25em;
-            padding: 0 15px;
-        } 
-/* Icon Section */
-        i {
-            display: block;
-            margin: 0 auto 0 auto;
-            font-size: 35px;
-            color: #fff;
-            transition: all .3s ease-in;   
-        }
-        
-        i:hover {
-            color: rgba(204, 180, 72, 0.788);
-            text-shadow: 2px 4px 5px rgba(141, 5, 5, 0.952);
-            font-size: 40px;
-            transform: scale(.5em)   
-        }
-    }
-    /* Note: Go back to delete duplicate media query */
+    
